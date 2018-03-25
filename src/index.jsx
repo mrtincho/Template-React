@@ -1,15 +1,20 @@
 import React, { Component } from 'react'; //Importo React de react y tambien Component (asi evito React.Component y uso Component solo)
 import Reactdom, { render } from 'react-dom'; //Importo render de react-dom para mostrar datos
+import App from './components/app.jsx';
 
 class Prueba extends React.Component {
   render() {
     return (
-      <h1>Hola Mundo</h1>
+      <h1>Titulo del Sitio</h1>
     ) 
   }
 }
 
 Reactdom.render(
-  <Prueba/>
+  <App/>
   , document.getElementById('app')
+);
+Reactdom.render(
+  <Prueba/>
+  , document.getElementById('titulo')
 );

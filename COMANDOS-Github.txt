@@ -1,6 +1,9 @@
 //Para iniciar git
 git init
 
+//Para crear el repositorio en Node
+git remote add origin https://github.com/mrtincho/Template-React.git
+
 //Para ver el estado del repositorio 
 git status
 

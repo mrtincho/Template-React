@@ -6,6 +6,20 @@ const express = require("express"), //Manejo de paquetes
 app.use(bodyParser.json()); //la app va a usar el modulo de bodyParser
 app.use(express.static(__dirname + "/public")); //La app usa una ruta estatica donde se almacena el index, imagenes, etc. 
 
+const users = [
+	{
+		"nombre": "Martin"
+	},
+	{
+		"nombre": "Tincho"
+	}
+];
+
+app.get('/api/users',(req, res) => {
+	res.json({
+		users: users
+	});
+});
 
 
 

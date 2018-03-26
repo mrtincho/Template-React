@@ -5,7 +5,7 @@ import App from './components/app.jsx';
 class Prueba extends React.Component {
   render() {
     return (
-      <h1>Titulo del Sitio</h1>
+      <h1>Hola Tonga</h1>
     ) 
   }
 }
